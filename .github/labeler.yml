@@ -1,0 +1,15 @@
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ['.github/**']
+server:
+  - changed-files:
+      - any-glob-to-any-file: ['cmd/**', 'internal/**', 'pkg/**', 'jellyfin/**']
+client:
+  - changed-files:
+      - any-glob-to-any-file: ['client/**']
+apple:
+  - changed-files:
+      - any-glob-to-any-file: ['apple/**']
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: ['docs/**', '**/*.md']
