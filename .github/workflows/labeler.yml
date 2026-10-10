@@ -1,1 +1,11 @@
-þÙ©þV›zW«ÂŠä~Z0Êi
+name: "Pull Request Labeler"
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+permissions:
+  pull-requests: write
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v5
